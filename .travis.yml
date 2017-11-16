@@ -3,7 +3,8 @@ language: c
 sudo: required
 dist: trusty
 
-compiler:
-    - gcc
+before_install:
+    - sudo apt-get -qq update
+    - sudo apt-get install -y diffstat makeinfo chrpath
 script:
     - ./tools/build.sh  
