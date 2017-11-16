@@ -5,6 +5,6 @@ dist: trusty
 
 before_install:
     - sudo apt-get -qq update
-    - sudo apt-get install -y diffstat makeinfo chrpath
+    - sudo apt-get install -y diffstat texinfo chrpath
 script:
     - ./tools/build.sh  
